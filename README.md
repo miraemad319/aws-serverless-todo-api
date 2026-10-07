@@ -152,8 +152,4 @@ After grading, delete the API Gateway API, the Lambda function and its log group
 
 # Author
 
-Mira Emad
-
-# License
-
-Add a license here if you want one, for example MIT.
+Mira Abdelhafiz
