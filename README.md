@@ -126,16 +126,36 @@ Tested with Postman against the `prod` stage, using a Cognito ID token for the t
 | DELETE the same id again | 404 `Todo not found` |
 
 Console screenshots:
-1. 
-2. 
-3. 
-4.
-5. 
-6. 
-7. 
-8. 
-9. 
-10.
+
+1. DynamoDB table `todos` (status Active)
+![DynamoDB table](screenshots/01-dynamodb-table.png)
+
+2. IAM inline policy `todos-table-access`
+![IAM policy](screenshots/02-iam-role-policies.png)
+
+3. Lambda function `todos-handler` with deployed code
+![Lambda function](screenshots/03-lambda-code.png)
+
+4. API Gateway resources and methods
+![API Gateway resources](screenshots/04-api-gateways-post-method.png)
+
+5. Cognito user pool
+![Cognito user pool](screenshots/05-api-gateway-all-methods.png)
+
+6. Cognito app client with password sign-in enabled
+![Cognito app client](screenshots/06-cognito-user-pool.png)
+
+7. Cognito authorizer `todos-cognito`
+![Cognito authorizer](screenshots/07-cognito-app-client.png)
+
+8. Authorizer attached to a method
+![Method authorization](screenshots/08-api-gateway-authorizer.png)
+
+9. Deployed `prod` stage
+![Prod stage](screenshots/09-api-gateway-prod-stage.png)
+
+10. Unauthorized response without a token
+![Unauthorized response](screenshots/10-unauthorized-no-token.png)
 
 # Security
 
