@@ -118,12 +118,12 @@ Tested with Postman against the `prod` stage, using a Cognito ID token for the t
 
 | Test | Expected result | Screenshot |
 |---|---|---|
-| Call `/todos` with no token | 401 `Unauthorized` |
-| POST `/todos` | 201 with a `todoId` |
-| GET `/todos` | 200 with the user's todos |
-| PUT `/todos/{id}` | 200 with `"done": true` |
-| DELETE `/todos/{id}` | 200 with `{"deleted": "<id>"}` |
-| DELETE the same id again | 404 `Todo not found` |
+| Call `/todos` with no token | 401 `Unauthorized` | ![Unauthorized](screenshots/10-unauthorized-no-token.png) |
+| POST `/todos` | 201 with a `todoId` | ![POST](screenshots/postman-POST.png) |
+| GET `/todos` | 200 with the user's todos | ![GET](screenshots/postman-GET.png) |
+| PUT `/todos/{id}` | 200 with `"done": true` | ![PUT](screenshots/postman-PUT.png) |
+| DELETE `/todos/{id}` | 200 with `{"deleted": "<id>"}` | ![DELETE existing](screenshots/postman-DELETE-existing-todo.png) |
+| DELETE the same id again | 404 `Todo not found` | ![DELETE non-existing](screenshots/postman-DELETE-non-existing-todo.png) |
 
 Console screenshots:
 
@@ -153,9 +153,6 @@ Console screenshots:
 
 9. Deployed `prod` stage
 ![Prod stage](screenshots/09-api-gateway-prod-stage.png)
-
-10. Unauthorized response without a token
-![Unauthorized response](screenshots/10-unauthorized-no-token.png)
 
 # Security
 
