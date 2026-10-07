@@ -138,14 +138,14 @@ Console screenshots:
 4. API Gateway resources and methods
 ![API Gateway resources](screenshots/04-api-gateway-post-method.png)
 
-5. Cognito user pool
-![Cognito user pool](screenshots/05-api-gateway-all-methods.png)
+5. API Gateway resources and methods
+![API Gateway resources](screenshots/05-api-gateway-all-methods.png)
 
-6. Cognito app client with password sign-in enabled
-![Cognito app client](screenshots/06-cognito-user-pool.png)
+6. Cognito user pool
+![Cognito user pool](screenshots/06-cognito-user-pool.png)
 
-7. Cognito authorizer `todos-cognito`
-![Cognito authorizer](screenshots/07-cognito-app-client.png)
+7. Cognito app client with password sign-in enabled
+![Cognito app client](screenshots/07-cognito-app-client.png)
 
 8. Authorizer attached to a method
 ![Method authorization](screenshots/08-api-gateway-authorizer.png)
