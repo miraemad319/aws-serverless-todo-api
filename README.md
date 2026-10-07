@@ -22,7 +22,6 @@
 - [Not Implemented](#not-implemented)
 - [Cleanup](#cleanup)
 - [Author](#author)
-- [License](#license)
 
 # Solution Overview
 
