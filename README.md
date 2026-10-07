@@ -19,7 +19,6 @@
 - [Testing the Solution](#testing-the-solution)
 - [Security](#security)
 - [Cost](#cost)
-- [Not Implemented](#not-implemented)
 - [Cleanup](#cleanup)
 - [Author](#author)
 
@@ -167,10 +166,6 @@ Console screenshots:
 # Cost
 
 All services are pay-per-use: DynamoDB on-demand, Lambda per invocation, API Gateway per request, and Cognito per monthly active user. At demo volume the cost is expected to be minimal (check current AWS pricing and free-tier terms). There are no servers, VPCs or NAT Gateways, which are the usual fixed-cost items.
-
-# Not Implemented
-
-Out of scope for this project: AWS WAF rate limiting, a CloudFront and S3 frontend, X-Ray tracing, API Gateway caching and DynamoDB Streams.
 
 # Cleanup
 
