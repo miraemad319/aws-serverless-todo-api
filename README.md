@@ -118,14 +118,24 @@ Tested with Postman against the `prod` stage, using a Cognito ID token for the t
 
 | Test | Expected result | Screenshot |
 |---|---|---|
-| Call `/todos` with no token | 401 `Unauthorized` | `screenshots/01-unauthorized.png` |
-| POST `/todos` | 201 with a `todoId` | `screenshots/02-post-201.png` |
-| GET `/todos` | 200 with the user's todos | `screenshots/03-get-200.png` |
-| PUT `/todos/{id}` | 200 with `"done": true` | `screenshots/04-put-200.png` |
-| DELETE `/todos/{id}` | 200 with `{"deleted": "<id>"}` | `screenshots/05-delete-200.png` |
-| DELETE the same id again | 404 `Todo not found` | `screenshots/06-delete-404.png` |
+| Call `/todos` with no token | 401 `Unauthorized` |
+| POST `/todos` | 201 with a `todoId` |
+| GET `/todos` | 200 with the user's todos |
+| PUT `/todos/{id}` | 200 with `"done": true` |
+| DELETE `/todos/{id}` | 200 with `{"deleted": "<id>"}` |
+| DELETE the same id again | 404 `Todo not found` |
 
-Console screenshots: DynamoDB table (`screenshots/07-dynamodb.png`), IAM inline policy (`screenshots/08-iam-policy.png`), Cognito user pool and app client (`screenshots/09-cognito.png`), API Gateway resources and authorizer (`screenshots/10-api-gateway.png`).
+Console screenshots:
+1. 
+2. 
+3. 
+4.
+5. 
+6. 
+7. 
+8. 
+9. 
+10.
 
 # Security
 
