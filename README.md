@@ -137,7 +137,7 @@ Console screenshots:
 ![Lambda function](screenshots/03-lambda-code.png)
 
 4. API Gateway resources and methods
-![API Gateway resources](screenshots/04-api-gateways-post-method.png)
+![API Gateway resources](screenshots/04-api-gateway-post-method.png)
 
 5. Cognito user pool
 ![Cognito user pool](screenshots/05-api-gateway-all-methods.png)
